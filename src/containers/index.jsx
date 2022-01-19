@@ -4,5 +4,6 @@ export {
     CustomLabel, 
     Layout, 
     SideBarContainer, 
+    MainBarContainer,
     FlexContainer 
 } from "./styled";
