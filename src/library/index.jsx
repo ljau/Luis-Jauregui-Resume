@@ -2,5 +2,9 @@ export {
     aboutMe, 
     education, 
     experience, 
-    myName 
+    myName,
+    contact,
+    languages,
+    softSkills,
+    frameworks,
 } from "./constants/data";

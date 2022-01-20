@@ -5,15 +5,17 @@ export const aboutMe = {
 
 export const education = [
   {
-    degree: "Bright Coder",
-    school: "Bright Coders Academy",
+    key: "0",
+    role: "Bright Coder",
+    place: "Bright Coders Academy",
     time: "Aug 2021 - Dec 2021",
     details:
       "-Intensive training program for Apps development using React Native, Firebase, Git & Github. -Agile project management and development. -Applying best programming practices, clean code, remote teamwork and collaboration.",
   },
   {
-    degree: "Bachelor's Degree",
-    school: "Universidad de Colima",
+    key: "",
+    role: "Bachelor's Degree",
+    place: "Universidad de Colima",
     time: "2019",
     details: "Telematics Engineering",
   },
@@ -24,7 +26,7 @@ export const experience = [
     key: "0",
     role: "Front-end Freelance",
     time: "2021 - Current",
-    company: "Banshees Veil",
+    place: "Banshees Veil",
     details:
       "-Development of Mobile applications using React Native, Firebase & Node.js -Development of Web applications using React.js, Next.js, Node.js and express.js",
   },
@@ -32,7 +34,7 @@ export const experience = [
     key: "1",
     role: "System Administrator",
     time: "2019 - Current",
-    company: "TATA CONSULTANCY SERVICES",
+    place: "TATA CONSULTANCY SERVICES",
     details:
       "-Configuration, monitoring and maintenance of Unix operating systems on physical and virtual machines. -Use of web applications for monitoring alerts and management of servers and users information.",
   },
@@ -40,7 +42,7 @@ export const experience = [
     key: "2",
     role: "Videogame Developer",
     time: "2021",
-    company: "Banshees Veil",
+    place: "Banshees Veil",
     details:
       "-Stay At Home -(C#-Unity5-Windows-Android) -Winner of the regional contest Games 4 empowerment (4th edition) in cathegory of Best Contribution -Released for Windows 10 and Android platforms.",
   },
@@ -48,7 +50,7 @@ export const experience = [
     key: "3",
     role: "Videogame Developer",
     time: "2018",
-    company: "Banshees Veil",
+    place: "Banshees Veil",
     details:
       "-Wood of War -(C#-Unity5-Android) -Winner of the regional contest Games 4 empowerment (1st edition) -Participated in the national contest National video game contest mx 2018",
   },
@@ -58,7 +60,7 @@ export const myName = {
   name: "Luis Ángel Jáuregui Flores",
 };
 
-export const Frameworks = [
+export const frameworks = [
   {
     name: "React Native",
   },
@@ -97,9 +99,21 @@ export const languages = [
   },
 ];
 
-export const contact = {
-  email: "luis.jauregui.fl@gmail.com",
-  linkedIn: "@luis-angel-jauregui",
-  phone: "(+52) 312-120-33-28",
-  git: "@ljau",
-};
+export const contact = [
+  {
+    key: "email",
+    data: "luis.jauregui.fl@gmail.com",
+  },
+  {
+    key: "linkedIn",
+    data: "@luis-angel-jauregui",
+  },
+  {
+    key: "phone",
+    data: "(+52) 312-120-33-28",
+  },
+  {
+    key: "git",
+    data: "@ljau",
+  },
+];

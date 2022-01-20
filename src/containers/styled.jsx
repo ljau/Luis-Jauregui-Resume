@@ -30,27 +30,29 @@ export const FlexContainer = styled.div`
   align-items: ${({ align }) => (align ? "flex-start" : "center")};
   flex-direction: ${({ dir }) => dir ?? "column"};
   min-height: ${({ minHeight }) => minHeight ?? "undefined"};
-  margin-top: ${({ marginTop }) => marginTop ?? "undefined"};;
-  margin-bottom: ${({ marginBot }) => marginBot ?? "undefined"};;
+  min-width: ${({ minWidth }) => minWidth ?? "undefined"};
+  margin-top: ${({ marginTop }) => marginTop ?? "undefined"};
+  margin-bottom: ${({ marginBot }) => marginBot ?? "undefined"};
+  word-wrap: break-word;
 `;
 
 export const CustomLabel = styled.h1`
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   color: ${({ color }) => color ?? "black"};
 `;
 
 export const SubtitleLabel = styled.h1`
-  font-size: 15px;
+  font-size: ${({ fontS }) => fontS ?? "18px"};
   font-weight: bold;
   color: ${({ color }) => color ?? "black"};
   margin: 1px;
   padding: 2px;
-
+  word-wrap: break-word;
 `;
 
 export const CustomText = styled.p`
-  font-size: 14px;  
+  font-size: 16px;  
   color: ${({ color }) => color ?? "black"};
   text-align: ${({ textAlign }) => textAlign ?? "justify"};
   text-justify: inter-word;

@@ -5,7 +5,15 @@ import { MainContainer } from "../../containers";
 export const MainPage = () => {
   return (
     <Layout>
-      <FlexContainer dir="row" align w="50%" marginTop="5vh" marginBot="5vh" bg="blue">
+      <FlexContainer
+        dir="row"
+        align
+        w="50%"
+        marginTop="5vh"
+        marginBot="5vh"
+        bg="blue"
+        minWidth="720px"
+      >
         <MainContainer />
         <SideBar />
       </FlexContainer>
