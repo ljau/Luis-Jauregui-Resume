@@ -1,12 +1,22 @@
 import React from "react";
-import { Layout, SideBar } from "../../containers";
+import { FlexContainer, Layout, SideBar } from "../../containers";
 import { MainContainer } from "../../containers";
 
 export const MainPage = () => {
   return (
-    <Layout>      
-      <MainContainer />
-      <SideBar />
+    <Layout>
+      <FlexContainer
+        dir="row"
+        align
+        w="50%"
+        marginTop="5vh"
+        marginBot="5vh"
+        bg="blue"
+        minWidth="720px"
+      >
+        <MainContainer />
+        <SideBar />
+      </FlexContainer>
     </Layout>
   );
 };

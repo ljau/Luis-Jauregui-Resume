@@ -3,6 +3,8 @@ export { SideBar } from "./SideBar";
 export { 
     CustomLabel, 
     Layout, 
-    SideBarContainer, 
-    FlexContainer 
+    SideContainer,
+    FlexContainer,
+    SubtitleLabel,
+    CustomText,
 } from "./styled";
