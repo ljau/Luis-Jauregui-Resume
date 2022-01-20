@@ -10,36 +10,49 @@ export const Layout = styled.div`
   align-items: flex-start;
 `;
 
-export const MainBarContainer = styled.div`
-  background-color: green;
-  height: 90%;
-  width: 35%;
-  min-height: 90vh;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-`;
-
-export const SideBarContainer = styled.div`
-  background-color: blue;
-  height: 90%;
-  width: 15%;
-  min-height: 90vh;
-  margin-top: 5vh;
-  margin-bottom: 5vh;
-`;
-
-export const FlexContainer = styled.div`
-  background-color: ${({ bg }) => bg ?? "green"};
-  height: ${({ h }) => h ?? "100%"};
+export const SideContainer = styled.div`
+  background-color: lightblue;
+  height: 100%;
   width: ${({ w }) => w ?? "100%"};
+  min-height: 90vh;
   display: flex;
   justify-content: ${({ jc }) => jc ?? "center"};
   align-items: ${({ align }) => (align ? "flex-start" : "center")};
   flex-direction: ${({ dir }) => dir ?? "column"};
-  min-height: ${({ minHeight }) => minHeight ?? "undefined"};
 `;
 
-export const CustomLabel = styled.p`
-  font-size: 16px;
+export const FlexContainer = styled.div`
+  background-color: ${({ bg }) => bg ?? "transparent"};
+  height: ${({ h }) => h ?? "100%"};
+  width: ${({ w }) => w ?? "100%"};
+  display: flex;
+  justify-content: ${({ jc }) => jc ?? "flex-start"};
+  align-items: ${({ align }) => (align ? "flex-start" : "center")};
+  flex-direction: ${({ dir }) => dir ?? "column"};
+  min-height: ${({ minHeight }) => minHeight ?? "undefined"};
+  margin-top: ${({ marginTop }) => marginTop ?? "undefined"};;
+  margin-bottom: ${({ marginBot }) => marginBot ?? "undefined"};;
+`;
+
+export const CustomLabel = styled.h1`
+  font-size: 20px;
   font-weight: bold;
+  color: ${({ color }) => color ?? "black"};
+`;
+
+export const SubtitleLabel = styled.h1`
+  font-size: 15px;
+  font-weight: bold;
+  color: ${({ color }) => color ?? "black"};
+  margin: 1px;
+  padding: 2px;
+
+`;
+
+export const CustomText = styled.p`
+  font-size: 14px;  
+  color: ${({ color }) => color ?? "black"};
+  text-align: ${({ textAlign }) => textAlign ?? "justify"};
+  text-justify: inter-word;
+  padding: 5px;
 `;
