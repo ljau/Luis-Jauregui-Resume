@@ -1,22 +1,23 @@
 import React from "react";
-import { FlexContainer, Layout, SideBar } from "../../containers";
+import { Layout, SideBar } from "../../containers";
 import { MainContainer } from "../../containers";
+import { TableContainer } from "./styled";
 
 export const MainPage = () => {
   return (
     <Layout>
-      <FlexContainer
-        dir="row"
+      <TableContainer
         align
-        w="50%"
+        w="60%"
         marginTop="5vh"
         marginBot="5vh"
         bg="blue"
         minWidth="720px"
+        isMainBlock
       >
         <MainContainer />
         <SideBar />
-      </FlexContainer>
+      </TableContainer>
     </Layout>
   );
 };
