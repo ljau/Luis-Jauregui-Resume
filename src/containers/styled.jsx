@@ -7,7 +7,7 @@ export const Layout = styled.div`
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 `;
 
 export const SideContainer = styled.div`
@@ -19,6 +19,11 @@ export const SideContainer = styled.div`
   justify-content: ${({ jc }) => jc ?? "center"};
   align-items: ${({ align }) => (align ? "flex-start" : "center")};
   flex-direction: ${({ dir }) => dir ?? "column"};
+
+  @media (max-width: 1080px) {
+    width: 100%;
+    align-items: center;
+  }
 `;
 
 export const FlexContainer = styled.div`
@@ -40,6 +45,10 @@ export const CustomLabel = styled.h1`
   font-size: 22px;
   font-weight: bold;
   color: ${({ color }) => color ?? "black"};
+
+  @media (max-width: 1080px) {
+    font-size: 200%;
+  }
 `;
 
 export const SubtitleLabel = styled.h1`
@@ -49,12 +58,18 @@ export const SubtitleLabel = styled.h1`
   margin: 1px;
   padding: 2px;
   word-wrap: break-word;
+  @media (max-width: 1080px) {
+    font-size: 150%;
+  }
 `;
 
 export const CustomText = styled.p`
-  font-size: 16px;  
+  font-size: 16px;
   color: ${({ color }) => color ?? "black"};
   text-align: ${({ textAlign }) => textAlign ?? "justify"};
   text-justify: inter-word;
   padding: 5px;
+  @media (max-width: 1080px) {
+    font-size: 150%;
+  }
 `;

@@ -14,8 +14,8 @@ export const SideBar = () => {
         <CustomLabel color="white">{myName.name}</CustomLabel>
       </FlexContainer>
 
-      <FlexContainer h="70%" minHeight="60vh" bg="gray" jc="flex-start">
-        <FlexContainer align  >
+      <FlexContainer h="70%" minHeight="60vh" bg="gray" jc="flex-start" >
+        <FlexContainer align >
           <CustomLabel>Contact</CustomLabel>
           {getContact}
         </FlexContainer>
