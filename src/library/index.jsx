@@ -7,4 +7,5 @@ export {
     languages,
     softSkills,
     frameworks,
+    skillsSectionsList,
 } from "./constants/data";

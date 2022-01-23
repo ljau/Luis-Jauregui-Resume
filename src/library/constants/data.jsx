@@ -62,58 +62,65 @@ export const myName = {
 
 export const frameworks = [
   {
-    name: "React Native",
+    description: "React Native",
   },
   {
-    name: "React JS",
+    description: "React JS",
   },
   {
-    name: "Unity",
+    description: "Unity",
   },
 ];
 
 export const softSkills = [
   {
-    skill: "Teamwork",
+    description: "Teamwork",
   },
   {
-    skill: "Persistence",
+    description: "Persistence",
   },
   {
-    skill: "Adaptability",
+    description: "Adaptability",
   },
   {
-    skill: "Ease of Learning",
+    description: "Ease of Learning",
   },
   {
-    skill: "Positive Attitude",
+    description: "Positive Attitude",
   },
 ];
 
 export const languages = [
   {
-    language: "English (Proeficient)",
+    description: "English (Proeficient)",
   },
   {
-    language: "Spanish (Native)",
+    description: "Spanish (Native)",
   },
 ];
 
 export const contact = [
   {
     key: "email",
-    data: "luis.jauregui.fl@gmail.com",
+    description: "luis.jauregui.fl@gmail.com",
   },
   {
     key: "linkedIn",
-    data: "@luis-angel-jauregui",
+    description: "@luis-angel-jauregui",
   },
   {
     key: "phone",
-    data: "(+52) 312-120-33-28",
+    description: "(+52) 312-120-33-28",
   },
   {
     key: "git",
-    data: "@ljau",
+    description: "@ljau",
   },
+];
+
+export const skillsSectionsList = [
+  { title: "Frameworks" },
+  { title: "Languages" },
+  { title: "Soft-Skills" },
+  { title: "Contact" },
 ];

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Layout = styled.div`
-  background-color: #8282da;
+  background-color: #e0e0e0;
   height: 100%;
   min-height: 100vh;
   width: 100%;
@@ -11,7 +11,7 @@ export const Layout = styled.div`
 `;
 
 export const SideContainer = styled.div`
-  background-color: lightblue;
+  background-color: ${({ bg }) => bg ?? "transparent"};
   height: 100%;
   width: ${({ w }) => w ?? "100%"};
   min-height: 90vh;
@@ -45,7 +45,7 @@ export const CustomLabel = styled.h1`
   font-size: 22px;
   font-weight: bold;
   color: ${({ color }) => color ?? "black"};
-
+  padding: ${({ padding }) => padding ?? "0px"};
   @media (max-width: 1080px) {
     font-size: 200%;
   }

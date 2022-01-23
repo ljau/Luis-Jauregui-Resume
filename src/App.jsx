@@ -1,10 +1,6 @@
-import './App.css';
+import React from "react";
 import { MainPage } from './components';
 
-function App() {
-  return (
-    <MainPage/>
-  );
-}
-
-export default App;
+export const App = () => {
+  return <MainPage/>;
+};

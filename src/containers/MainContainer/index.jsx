@@ -30,20 +30,20 @@ export const MainContainer = () => {
   });
 
   return (
-    <SideContainer w="70%">
+    <SideContainer w="70%" bg="white">
       <FlexContainer minHeight="90vh">
-        <FlexContainer bg="orange" h="20%" w="90%" align>
-          <CustomLabel>About Me</CustomLabel>
+        <FlexContainer h="20%" w="90%" align>
+          <CustomLabel color="#7b08ff" >About Me</CustomLabel>
           <CustomText>{aboutMe.about}</CustomText>
         </FlexContainer>
 
-        <FlexContainer bg="yellow" h="20%" w="90%" align>
-          <CustomLabel>Education</CustomLabel>
+        <FlexContainer h="20%" w="90%" align>
+          <CustomLabel color="#7b08ff">Education</CustomLabel>
           {educationDetails}
         </FlexContainer>
 
-        <FlexContainer bg="cyan" h="20%" w="90%" align>
-          <CustomLabel>Experience</CustomLabel>
+        <FlexContainer h="20%" w="90%" align>
+          <CustomLabel color="#7b08ff">Experience</CustomLabel>
           {experienceDetails}
         </FlexContainer>
       </FlexContainer>
