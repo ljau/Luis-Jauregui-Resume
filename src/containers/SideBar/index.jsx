@@ -1,3 +1,5 @@
+import { faWrench, faGraduationCap, faBriefcase } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { SideContainer, CustomLabel, FlexContainer, SubtitleLabel } from "..";
 import {
@@ -11,10 +13,10 @@ import {
 import { SkillsContainer } from "./styled";
 
 export const SideBar = () => {
-  const getData = (text) => {
+  const getData = (text,title) => {
     return (
       <SubtitleLabel key={text.description} fontS="95%" color="white" >
-        {text.description}
+       {title ==="Contact"? <FontAwesomeIcon icon={text.icon}/>: undefined} {text.description}
       </SubtitleLabel>
     );
   };
@@ -27,7 +29,7 @@ export const SideBar = () => {
         });
       case "Contact":
         return contact.map((data) => {
-          return getData(data);
+          return getData(data,"Contact");
         });
       case "Languages":
         return languages.map((data) => {
@@ -45,7 +47,9 @@ export const SideBar = () => {
   const showContainers = skillsSectionsList.map((data) => {
     return (
       <SkillsContainer key={data.title} >
-        <CustomLabel color="yellow">{data.title}</CustomLabel>
+        <CustomLabel color="yellow">
+        <FontAwesomeIcon icon={data.icon}/> {data.title}
+        </CustomLabel>
         {getDetails(data.title)}
       </SkillsContainer>
     );

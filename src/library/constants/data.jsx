@@ -1,3 +1,13 @@
+import {
+  faWrench,
+  faLanguage,
+  faUserPlus,
+  faAddressCard,
+  faEnvelope,
+  faPhoneSquare,
+} from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+
 export const aboutMe = {
   about:
     "Telematics Engineer deeply interested in applications development, currently working on Unix Systems and React Front-end freelance. Also going on some personal projects looking to get more involved in the development area, as I have been working for some years in a Support branch and got fascinated about dev field, so I would rather to continue my career in this area.",
@@ -101,26 +111,38 @@ export const languages = [
 
 export const contact = [
   {
-    key: "email",
+    icon: faEnvelope,
     description: "luis.jauregui.fl@gmail.com",
   },
   {
-    key: "linkedIn",
+    icon: faLinkedin,
     description: "@luis-angel-jauregui",
   },
   {
-    key: "phone",
+    icon: faPhoneSquare,
     description: "(+52) 312-120-33-28",
   },
   {
-    key: "git",
+    icon: faGithub,
     description: "@ljau",
   },
 ];
 
 export const skillsSectionsList = [
-  { title: "Frameworks" },
-  { title: "Languages" },
-  { title: "Soft-Skills" },
-  { title: "Contact" },
+  {
+    title: "Frameworks",
+    icon: faWrench,
+  },
+  {
+    title: "Languages",
+    icon: faLanguage,
+  },
+  {
+    title: "Soft-Skills",
+    icon: faUserPlus,
+  },
+  {
+    title: "Contact",
+    icon: faAddressCard,
+  },
 ];
