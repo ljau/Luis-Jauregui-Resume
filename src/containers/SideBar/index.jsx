@@ -1,8 +1,8 @@
-import { faWrench, faGraduationCap, faBriefcase } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { SideContainer, CustomLabel, FlexContainer, SubtitleLabel } from "..";
 import {
+  colors,
   contact,
   frameworks,
   languages,
@@ -15,7 +15,7 @@ import { SkillsContainer } from "./styled";
 export const SideBar = () => {
   const getData = (text,title) => {
     return (
-      <SubtitleLabel key={text.description} fontS="95%" color="white" >
+      <SubtitleLabel key={text.description} fontS="95%" color={colors.white} >
        {title ==="Contact"? <FontAwesomeIcon icon={text.icon}/>: undefined} {text.description}
       </SubtitleLabel>
     );
@@ -47,7 +47,7 @@ export const SideBar = () => {
   const showContainers = skillsSectionsList.map((data) => {
     return (
       <SkillsContainer key={data.title} >
-        <CustomLabel color="yellow">
+        <CustomLabel color={colors.yellow}>
         <FontAwesomeIcon icon={data.icon}/> {data.title}
         </CustomLabel>
         {getDetails(data.title)}
@@ -56,12 +56,12 @@ export const SideBar = () => {
   });
 
   return (
-    <SideContainer w="30%" >
-      <FlexContainer h="30%" minHeight="30vh" bg="#081199d8" >
-        <CustomLabel padding="5%" color="yellow">{myName.name}</CustomLabel>
+    <SideContainer w="22%" >
+      <FlexContainer h="30%" minHeight="30vh" bg={colors.purple} >
+        <CustomLabel padding="5%" color={colors.white}>{myName.name}</CustomLabel>
       </FlexContainer>
 
-      <FlexContainer h="70%" w="85%" minHeight="60vh" jc="flex-start">
+      <FlexContainer h="70%" w="85%" minHeight="60vh" >
         {showContainers}
       </FlexContainer>
     </SideContainer>

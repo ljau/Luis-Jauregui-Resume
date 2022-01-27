@@ -1,6 +1,10 @@
-import { faUser, faGraduationCap, faBriefcase } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faUser,
+  faGraduationCap,
+  faBriefcase,
+} from "@fortawesome/free-solid-svg-icons";
 import {
   CustomLabel,
   CustomText,
@@ -8,14 +12,19 @@ import {
   SideContainer,
   SubtitleLabel,
 } from "..";
-import { aboutMe, education, experience } from "../../library";
+import { 
+  aboutMe, 
+  colors, 
+  education, 
+  experience 
+} from "../../library";
 
 export const MainContainer = () => {
   const fillDetails = ({ ...data }) => {
     return (
       <FlexContainer key={data.key} align>
         <SubtitleLabel>{data.role}</SubtitleLabel>
-        <SubtitleLabel color="gray">
+        <SubtitleLabel color={colors.gray}>
           {data.place + " | " + data.time}
         </SubtitleLabel>
         <CustomText>{data.details}</CustomText>
@@ -32,24 +41,24 @@ export const MainContainer = () => {
   });
 
   return (
-    <SideContainer w="70%" bg="white">
+    <SideContainer w="78%" bg={colors.white}>
       <FlexContainer minHeight="90vh">
         <FlexContainer h="20%" w="90%" align>
-          <CustomLabel color="#7b08ff">
+          <CustomLabel color={colors.purple}>
             <FontAwesomeIcon icon={faUser} /> About Me
           </CustomLabel>
           <CustomText>{aboutMe.about}</CustomText>
         </FlexContainer>
 
         <FlexContainer h="20%" w="90%" align>
-          <CustomLabel color="#7b08ff">
+          <CustomLabel color={colors.purple}>
             <FontAwesomeIcon icon={faGraduationCap} /> Education
           </CustomLabel>
           {educationDetails}
         </FlexContainer>
 
         <FlexContainer h="20%" w="90%" align>
-          <CustomLabel color="#7b08ff">
+          <CustomLabel color={colors.purple}>
             <FontAwesomeIcon icon={faBriefcase} /> Experience
           </CustomLabel>
           {experienceDetails}

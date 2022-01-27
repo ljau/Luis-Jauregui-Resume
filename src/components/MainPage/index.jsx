@@ -1,6 +1,7 @@
 import React from "react";
 import { Layout, SideBar } from "../../containers";
 import { MainContainer } from "../../containers";
+import { colors } from "../../library";
 import { TableContainer } from "./styled";
 
 export const MainPage = () => {
@@ -11,9 +12,8 @@ export const MainPage = () => {
         w="60%"
         marginTop="5vh"
         marginBot="5vh"
-        bg="blue"
-        minWidth="720px"
-        isMainBlock
+        bg={colors.lightPurple}
+        minWidth="720px"        
       >
         <MainContainer />
         <SideBar />

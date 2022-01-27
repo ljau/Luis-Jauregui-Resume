@@ -8,7 +8,8 @@ export const SkillsContainer = styled.div`
   align-items: flex-start;
   flex-direction: ${({ dir }) => dir ?? "column"};
   word-wrap: break-word;
-
+  padding-top: 5%;
+  padding-bottom: 5%;
   @media (max-width: 1080px){
       align-items: center;
   }

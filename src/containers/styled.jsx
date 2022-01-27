@@ -1,13 +1,17 @@
 import styled from "styled-components";
+import { colors } from "../library";
 
 export const Layout = styled.div`
-  background-color: #e0e0e0;
+  background-color: ${colors.powderBlue};
   height: 100%;
   min-height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 1080px) {
+    max-height: 100%;
+  }
 `;
 
 export const SideContainer = styled.div`
@@ -23,6 +27,7 @@ export const SideContainer = styled.div`
   @media (max-width: 1080px) {
     width: 100%;
     align-items: center;
+    min-height: 100%;
   }
 `;
 
@@ -39,12 +44,16 @@ export const FlexContainer = styled.div`
   margin-top: ${({ marginTop }) => marginTop ?? "undefined"};
   margin-bottom: ${({ marginBot }) => marginBot ?? "undefined"};
   word-wrap: break-word;
+  overflow-wrap: break-word;
+  @media (max-width: 1080px) {
+    min-height: 0px;
+  }
 `;
 
 export const CustomLabel = styled.h1`
-  font-size: 22px;
+  font-size: 24px;
   font-weight: bold;
-  color: ${({ color }) => color ?? "black"};
+  color: ${({ color }) => color ?? colors.black};
   padding: ${({ padding }) => padding ?? "0px"};
   @media (max-width: 1080px) {
     font-size: 200%;
@@ -54,10 +63,11 @@ export const CustomLabel = styled.h1`
 export const SubtitleLabel = styled.h1`
   font-size: ${({ fontS }) => fontS ?? "18px"};
   font-weight: bold;
-  color: ${({ color }) => color ?? "black"};
+  color: ${({ color }) => color ?? colors.black};
   margin: 1px;
   padding: 2px;
   word-wrap: break-word;
+  word-break: break-word;
   @media (max-width: 1080px) {
     font-size: 150%;
   }
@@ -65,7 +75,7 @@ export const SubtitleLabel = styled.h1`
 
 export const CustomText = styled.p`
   font-size: 16px;
-  color: ${({ color }) => color ?? "black"};
+  color: ${({ color }) => color ?? colors.black};
   text-align: ${({ textAlign }) => textAlign ?? "justify"};
   text-justify: inter-word;
   padding: 5px;
