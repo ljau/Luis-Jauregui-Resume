@@ -83,3 +83,16 @@ export const CustomText = styled.p`
     font-size: 150%;
   }
 `;
+
+export const CustomImage = styled.img`
+  width: 60%;
+  height: 60%;
+  margin: 5%;
+  border-radius: 100%;
+  @media (max-width: 1080px) {
+    width: 30%;
+    height: 30%;
+    border-radius: 40%;
+    margin-top: -3%;
+}
+`;

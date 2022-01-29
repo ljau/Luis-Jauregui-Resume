@@ -7,4 +7,5 @@ export {
     FlexContainer,
     SubtitleLabel,
     CustomText,
+    CustomImage,
 } from "./styled";

@@ -41,7 +41,7 @@ export const MainContainer = () => {
   });
 
   return (
-    <SideContainer w="78%" bg={colors.white}>
+    <SideContainer w="77%" bg={colors.white}>
       <FlexContainer minHeight="90vh">
         <FlexContainer h="20%" w="90%" align>
           <CustomLabel color={colors.purple}>
